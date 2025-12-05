@@ -9,13 +9,11 @@ int main() {
     int c = 7;
 
     int temp;
-    int temp2;
+    temp = a;
+    a = c;
+    c = b;
+    b = temp;
 
-    temp = b;
-    b = a;
-    temp2 = c;
-    c = temp;
-    a = temp2;
     cout << a << endl;
     cout << b << endl;
     cout << c;
